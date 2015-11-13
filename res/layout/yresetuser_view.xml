@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.text.Yresetuser" >
+    
+    <LinearLayout
+        android:id="@+id/yresetruser_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/purple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="修改用户信息"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+  <LinearLayout
+        android:id="@+id/yresetuser_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ybutton18"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/yresetruser_title"
+        android:background="@drawable/login_layout_editor_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/total_zhigonghao"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.66"
+                android:text="@string/total_zhigonghao" />
+
+            <TextView
+                android:id="@+id/yresetuser_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.66"
+                android:text="@string/total_name" />
+
+            <TextView
+                android:id="@+id/yresetuser_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.66"
+                android:text="@string/total_password" />
+
+            <TextView
+                android:id="@+id/yresetuser_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.66"
+                android:text="@string/total_phone" />
+
+            <TextView
+                android:id="@+id/yresetuser_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_power" />
+
+            <CheckBox
+                android:id="@+id/yresetuser_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单选"
+                android:textSize="12sp" />
+        </LinearLayout>
+       
+        
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffc8c8c8" />
+
+        <ListView
+            android:id="@+id/yresetuser_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+       
+</LinearLayout>
+
+    <Button
+        android:id="@+id/ybutton17"
+        android:layout_width="160dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/purple"
+        android:text="确认修改"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/ybutton18"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/ybutton17"
+        android:background="@color/purple"
+        android:text="返回"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

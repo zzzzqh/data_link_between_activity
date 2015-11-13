@@ -1,0 +1,2 @@
+使用spinner实现下拉列表；
+实现各activity之间的数据传递
